@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.O Sites</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e0e0e0; /* Light grey background for contrast */
+            padding: 20px; /* Add padding around the body */
+        }
+
+        #game-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9; /* Maintains 16:9 ratio */
+            background-color: #000; /* Black background for the game area */
+            overflow: hidden; /* Hides overflow */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            margin-bottom: 20px; /* Space below the game container */
+        }
+
+        #game {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove border */
+        }
+
+        .controls {
+            width: 80%; /* Match width with the game container */
+            display: flex;
+            justify-content: space-between; /* Space between title and button */
+            align-items: center; /* Center vertically */
+            margin: 15px 0; /* Margin above and below the controls */
+        }
+
+        .game-name {
+            font-size: 24px; /* Larger font size */
+            color: #333; /* Dark grey color */
+            font-weight: bold; /* Bold text */
+        }
+
+        .fullscreen-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 20px; /* Larger padding for better click area */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s; /* Add transform for hover */
+            font-size: 16px; /* Font size for button */
+        }
+
+        .fullscreen-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .game-name {
+                font-size: 20px; /* Smaller font size on small screens */
+            }
+
+            .fullscreen-btn {
+                padding: 10px 15px; /* Smaller padding on small screens */
+                font-size: 14px; /* Smaller font size for the button */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <iframe id="game" src="html/gxmes/1v1lol/gxme.html" frameborder="0"></iframe>
+</div>
+
+<div class="controls">
+    <div class="game-name">1v1.lol</div>
+    <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
+</div>
+
+<script>
+    function toggleFullscreen() {
+        const gameContainer = document.getElementById('game-container');
+        if (!document.fullscreenElement) {
+            gameContainer.requestFullscreen().catch(err => {
+                console.log(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+            });
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
