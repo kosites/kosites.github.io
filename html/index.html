@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section id="games">
+    <h2>Featured Games</h2>
+    <input type="text" id="search-input" placeholder="Search for a game..." onkeyup="filterGames()">
+    <div class="game-grid">
+        <!-- Game Cards -->
+        <div class="game-card" data-name="Game 1">
+            <img src="https://via.placeholder.com/300x150" alt="Game 1" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 1</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 2">
+            <img src="https://via.placeholder.com/300x150" alt="Game 2" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 2</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 3">
+            <img src="https://via.placeholder.com/300x150" alt="Game 3" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 3</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 4">
+            <img src="https://via.placeholder.com/300x150" alt="Game 4" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 4</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 5">
+            <img src="https://via.placeholder.com/300x150" alt="Game 5" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 5</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 6">
+            <img src="https://via.placeholder.com/300x150" alt="Game 6" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 6</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 7">
+            <img src="https://via.placeholder.com/300x150" alt="Game 7" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 7</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 8">
+            <img src="https://via.placeholder.com/300x150" alt="Game 8" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 8</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 9">
+            <img src="https://via.placeholder.com/300x150" alt="Game 9" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 9</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 10">
+            <img src="https://via.placeholder.com/300x150" alt="Game 10" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 10</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 11">
+            <img src="https://via.placeholder.com/300x150" alt="Game 11" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 11</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 12">
+            <img src="https://via.placeholder.com/300x150" alt="Game 12" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 12</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 13">
+            <img src="https://via.placeholder.com/300x150" alt="Game 13" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 13</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 14">
+            <img src="https://via.placeholder.com/300x150" alt="Game 14" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 14</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 15">
+            <img src="https://via.placeholder.com/300x150" alt="Game 15" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 15</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 16">
+            <img src="https://via.placeholder.com/300x150" alt="Game 16" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 16</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 17">
+            <img src="https://via.placeholder.com/300x150" alt="Game 17" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 17</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 18">
+            <img src="https://via.placeholder.com/300x150" alt="Game 18" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 18</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 19">
+            <img src="https://via.placeholder.com/300x150" alt="Game 19" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 19</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 20">
+            <img src="https://via.placeholder.com/300x150" alt="Game 20" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 20</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 21">
+            <img src="https://via.placeholder.com/300x150" alt="Game 21" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 21</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 22">
+            <img src="https://via.placeholder.com/300x150" alt="Game 22" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 22</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 23">
+            <img src="https://via.placeholder.com/300x150" alt="Game 23" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 23</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 24">
+            <img src="https://via.placeholder.com/300x150" alt="Game 24" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 24</h3>
+            </div>
+        </div>
+        <div class="game-card" data-name="Game 25">
+            <img src="https://via.placeholder.com/300x150" alt="Game 25" class="game-image">
+            <div class="game-overlay">
+                <h3>Game 25</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
