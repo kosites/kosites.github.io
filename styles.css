@@ -36,8 +36,10 @@ body {
 
 .game-image {
     width: 100%;
-    height: auto;
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
     display: block;
+
 }
 
 .game-overlay {
