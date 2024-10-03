@@ -19,9 +19,9 @@
 
         #game-container {
             position: relative;
-            width: 80%;
-            max-width: 800px;
-            aspect-ratio: 16 / 9; /* Maintains 16:9 ratio */
+            width: 90%; /* Increased width */
+            max-width: 1400px; /* Increased max-width */
+            height: 800px; /* Fixed height */
             background-color: #000; /* Black background for the game area */
             overflow: hidden; /* Hides overflow */
             border-radius: 10px; /* Rounded corners */
@@ -36,7 +36,7 @@
         }
 
         .controls {
-            width: 80%; /* Match width with the game container */
+            width: 90%; /* Match width with the game container */
             display: flex;
             justify-content: space-between; /* Space between title and button */
             align-items: center; /* Center vertically */
@@ -74,6 +74,10 @@
             .fullscreen-btn {
                 padding: 10px 15px; /* Smaller padding on small screens */
                 font-size: 14px; /* Smaller font size for the button */
+            }
+
+            #game-container {
+                height: 500px; /* Adjust height on small screens */
             }
         }
     </style>
