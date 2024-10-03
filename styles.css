@@ -32,6 +32,11 @@ body {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    transition: transform 0.3s; /* Add hover effect */
+}
+
+.game-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
 }
 
 .game-image {
@@ -39,7 +44,6 @@ body {
     height: 150px; /* Fixed height */
     object-fit: cover; /* Ensures the image covers the area without stretching */
     display: block;
-
 }
 
 .game-overlay {
